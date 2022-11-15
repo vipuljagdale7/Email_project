@@ -1,0 +1,13 @@
+
+
+<html>
+    <title>Home page</title>
+    <h2>New Employee Joined</h2>
+
+    <form action="{% url 'homepage' %}" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="Submit" value = "Submit">
+    </form>
+
+</html>
